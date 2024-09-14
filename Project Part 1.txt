@@ -1,4 +1,4 @@
-@@ -2,3 +2,10 @@ Teammates: Sirui Zeng, Xiaolong Zhu, Zhaoyang Pan, Kangrui Kang
+Teammates: Sirui Zeng, Xiaolong Zhu, Zhaoyang Pan, Kangrui Kang
 Team name: Nine
 Dataset: 
     “Electric Vehicle Population Data”
@@ -6,9 +6,16 @@ Dataset:
 
 Steps:
     1. Loading the Data
+
     2. Inspecting the Data
+        Check each column in the dataset and remove columns that are not relevant or needed for the analysis. Delete columns that are not needed (CAFV) Eligibility and Vehicle Location.
+
     3. Handling Missing Values
+        Check if there are missing values ​​in the dataset (such as blank cells or missing data represented by specific characters, such as NaN, NULL)
+
     4. Data Type Conversion
+        Make sure each column has the correct data type. For example, the Year column should be an integer.
+
     5. Handle Categorical Data
 
-11111111111
+
