@@ -6,16 +6,22 @@ Dataset:
 
 Steps:
     1. Loading the Data
+        Load the dataset from the CSV file to inspect the basic information of the dataset. Check the number of rows, columns, and some basic statistics to get a preliminary understanding of 
+        the data.
 
     2. Inspecting the Data
-        Check each column in the dataset and remove columns that are not relevant or needed for the analysis. Delete columns that are not needed (CAFV) Eligibility and Vehicle Location.
+        Review the name, data type, and data sample of each column to determine which columns are relevant for analysis. Delete irrelevant or redundant columns, such as "CAFV Eligibility" and 
+        "Vehicle Location". These columns may not be directly used in subsequent analysis.
 
     3. Handling Missing Values
-        Check if there are missing values ​​in the dataset (such as blank cells or missing data represented by specific characters, such as NaN, NULL)
+        Check if there are missing values ​​in the dataset (such as blank cells or missing data represented by specific characters, such as NaN, NULL).
+        For example, if there is a large amount of missing data in some columns, consider deleting these columns. If there are fewer missing values, we will use the mean, median, etc.
+        to fill them, or simply delete these rows.
 
     4. Data Type Conversion
         Make sure each column has the correct data type. For example, the Year column should be an integer.
 
     5. Handle Categorical Data
-
+        Identify the categorical variables contained in the dataset, such as Make, Model, Electric Vehicle Type, etc. Convert these categorical variables into numeric format for subsequent 
+        analysis or model use.
 
