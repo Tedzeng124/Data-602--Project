@@ -10,18 +10,18 @@ Steps:
         the data.
 
     2. Inspecting the Data
-        Review the name, data type, and data sample of each column to determine which columns are relevant for analysis. Delete irrelevant or redundant columns, such as "CAFV Eligibility" and 
-        "Vehicle Location". These columns may not be directly used in subsequent analysis.
+        Review the name, data type, and data sample of each column to determine which columns are relevant for analysis. Delete irrelevant or redundant columns.
+        Here, we find that "2020 Census Tract" and "Vehicle Location" may not be directly used in subsequent analysis.
 
-    3. Handling Missing Values
-        Check if there are missing values ​​in the dataset (such as blank cells or missing data represented by specific characters, such as NaN, NULL).
+    3. Handling Missing and Abnormal Values
+        Check if there are missing or abnormal values ​​in the dataset (such as blank cells or missing data represented by specific characters, such as NaN, NULL).
         For example, if there is a large amount of missing data in some columns, consider deleting these columns. If there are fewer missing values, we will use the mean, median, etc.
         to fill them, or simply delete these rows.
+        Here, we find that when "Clean Alternative Fuel Vehicle (CAFV) Eligibility" variable shows "Eligibility unknown as battery range has not been researched", the corresponding "Electric Range" shows 0. These zero values may be abnormal values and they may not be appropriate to analyze.
 
     4. Data Type Conversion
         Make sure each column has the correct data type. For example, the Year column should be an integer.
+        Some categorical data can be convert into numeric format for subsequent analysis.
 
     5. Handle Categorical Data
-        Identify the categorical variables contained in the dataset, such as Make, Model, Electric Vehicle Type, etc. Convert these categorical variables into numeric format for subsequent 
-        analysis or model use.
-
+        Identify the categorical variables contained in the dataset, such as Make, Model, Electric Vehicle Type, etc.
