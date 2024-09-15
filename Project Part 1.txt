@@ -1,4 +1,4 @@
-Teammates: Sirui Zeng, Xiaolong Zhu, Zhaoyang Pan, Kangrui Kang
+Teammates: Sirui Zeng, Xiaolong Zhu, Zhaoyang Pan, Kangrui Kang, Ruikang Yan
 Team name: Nine
 Dataset: 
     “Electric Vehicle Population Data”
