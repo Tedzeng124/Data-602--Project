@@ -1,1 +1,22 @@
+The column names of the feature(s):
 
+    Make (Car manufacturer)
+    Model (Car model)
+    Model Year (Model year)
+    Electric Vehicle Type (Electric vehicle type)
+    Electric Range (Electric range)
+    Base MSRP (Manufacturer suggested retail price)
+    County (County)
+
+The target outcome:
+
+    Predict the price of different electric vehicles (Base MSRP)
+    Analyze the market distribution of different electric vehicle types, by county or by manufacturer
+    Study the relationship between electric range and price, or the trend of electric vehicle year and range
+
+Initial plan:
+
+    Handling Date Features: Convert the Model Year column to the age of the vehicle (current year minus vehicle year) as a new feature Vehicle Age.
+    Handling Electric Vehicle Type: Convert the Electric Vehicle Type column to numeric or categorical data.
+    Handling Regional Features: You can convert County to categorical data. You can perform geographical grouping and analyze the distribution of vehicles by region.
+    Electric Range Ratio: You can calculate a range ratio based on Electric Range and Model Year (Electric Range/Model Year) to study the progress of electric vehicle range over time.
