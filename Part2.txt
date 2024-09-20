@@ -20,3 +20,13 @@ Initial plan:
     Handling Electric Vehicle Type: Convert the Electric Vehicle Type column to numeric or categorical data.
     Handling Regional Features: You can convert County to categorical data. You can perform geographical grouping and analyze the distribution of vehicles by region.
     Electric Range Ratio: You can calculate a range ratio based on Electric Range and Model Year (Electric Range/Model Year) to study the progress of electric vehicle range over time.
+
+
+Approach to dealing with imbalanced data:
+
+We will closely monitor the dataset for any potential imbalances, especially in key categorical features like Make and Electric Vehicle Type. If we detect an imbalance that exceeds a 7:3 ratio, we will implement the following strategies:
+
+	1.	Oversampling: If certain vehicle types or manufacturers are underrepresented, we will use techniques such as SMOTE (Synthetic Minority Oversampling Technique) to create synthetic samples, ensuring the model doesn’t overfit to the majority class  .
+	2.	Class Weighting: In models like XGBoost, we will apply class weighting, adjusting the loss function to give higher importance to the minority class, which helps improve model performance across all categories .
+
+If the class distributions show reasonable balance (e.g., below a 5:1 ratio), we may choose not to apply these techniques, keeping the modeling process simple and efficient .
