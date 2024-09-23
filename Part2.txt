@@ -28,5 +28,11 @@ We will closely monitor the dataset for any potential imbalances, especially in 
 
 	1.	Oversampling: If certain vehicle types or manufacturers are underrepresented, we will use techniques such as SMOTE (Synthetic Minority Oversampling Technique) to create synthetic samples, ensuring the model doesn’t overfit to the majority class  .
 	2.	Class Weighting: In models like XGBoost, we will apply class weighting, adjusting the loss function to give higher importance to the minority class, which helps improve model performance across all categories .
+	3.      Undersampling: If one or few majority classes has significantly more data than other classes. We want to use the underspampling method
+to reduce the number of observations of majority classes.
 
-If the class distributions show reasonable balance (e.g., below a 5:1 ratio), we may choose not to apply these techniques, keeping the modeling process simple and efficient .
+If the class distributions show reasonable balance (e.g., below a 5:1 ratio), we may choose not to apply these techniques, keeping the modeling process simple and efficient.
+
+For example: We find out that the car manufacturer "TESLA" contributes 88083 out of 200048 data, which is significantly more than other 41 manufacurer.
+Therefore, we want to balance these data. If we choose Oversmapling method, a situation that is likely happen is that we need to oversampling for all
+41 manufacurer except "TESLA". Therefore, a undersampling method to reduce only the data of "TESLA" is more practicable. 
